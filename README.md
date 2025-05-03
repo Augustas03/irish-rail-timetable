@@ -8,7 +8,7 @@ This application fetches current train schedule data from the Irish Rail API for
 
 ## Sample Output
 
-![Sample Train Times HTML Output](train_times_sample.png)
+![Sample Train Times HTML Output](img.png)
 
 ## Features
 
@@ -20,7 +20,6 @@ This application fetches current train schedule data from the Irish Rail API for
   - Expected arrival and departure times
   - Train status (on time/delayed)
   - Direction of travel
-- Color-coded status indicators (green for on-time, red for delayed)
 - Simple, responsive design that works on all devices
 - Generates a static HTML file that can be viewed in any browser
 
@@ -35,12 +34,12 @@ You can modify the following constants at the top of the `SingleStationTrainTime
 
 ```java
 // Set your desired station code here
-private static final String STATION_CODE = "ENFLD"; // Enfield station
+private static final String STATION_CODE = "DGHDA"; // Drogheda station
 
 // You can change the station name here (will be displayed in the HTML)
-private static final String STATION_NAME = "Enfield";
+private static final String STATION_NAME = "Drogheda";
 
-// Set the look-ahead period in minutes (default 90)
+// Set the look-ahead period in minutes minimum = 5 mins and maximum = 90 mins
 private static final int LOOK_AHEAD_MINUTES = 90;
 
 // Output file name
@@ -73,6 +72,7 @@ Common station codes:
 - PERSE - Pearse
 - MHIDE - Malahide
 - HOWTH - Howth
+- DGHDA - Drogheda
 
 ## Refreshing Data
 
